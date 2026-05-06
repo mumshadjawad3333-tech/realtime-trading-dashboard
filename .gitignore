@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# Environment variables (CRITICAL)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Firebase & Keys
+*.json
+!package.json
+service-account-file.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+.dockerignore
