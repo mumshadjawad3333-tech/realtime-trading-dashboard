@@ -6,10 +6,10 @@ importScripts('https://www.gstatic.com/firebasejs/9.0.0/firebase-messaging-compa
 // Use the same config as your frontend firebase.ts
 
 firebase.initializeApp({
-  apiKey: "AIzaSyDFHz1bwIKzk7fceS3EFcI8JOW6lWlpYdw",
-  projectId: "temporary-54f28",
-  messagingSenderId: "492992907320",
-  appId: "1:492992907320:web:cf5b5440701de7efe2fecd"
+  apiKey: process.env.VITE_FIREBASE_API_KEY,
+  projectId: process.env.VITE_FIREBASE_PROJECT_ID,
+  messagingSenderId: process.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.VITE_FIREBASE_APP_ID
 });
 
 const messaging = firebase.messaging();

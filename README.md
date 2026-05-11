@@ -26,6 +26,21 @@ A high-performance, full-stack trading application built to demonstrate real-tim
 
 ##  Getting Started
 
+#Security & Configuration
+
+To adhere to security best practices and prevent credential exposure, this repository uses environment templates.
+
+### Setup Steps:
+1. *Environment Variables:*
+   - Copy backend/.env.example to backend/.env.
+   - Copy frontend/.env.example to frontend/.env.
+2. *Firebase Service Account:*
+   - Place your Firebase Admin SDK JSON file in the /backend directory and name it service-account-file.json.
+3. *Service Worker:*
+   - Update the placeholders in frontend/public/firebase-messaging-sw.js with your specific Firebase web credentials.
+4. *Run with Docker:*
+   - Execute docker compose up --build.
+
 ### Credentials
 Use the following details to access the dashboard:
 *   **Username**: `admin`
@@ -68,3 +83,6 @@ Scalability Roadmap: I have structured the services to support high-availability
 Horizontal Pod Autoscaling (HPA) based on resource utilization.
 
 Ingress configuration with Session Affinity to maintain stable Socket.io connections.# realtime-trading-dashboard
+
+
+
