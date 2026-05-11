@@ -5,11 +5,11 @@ importScripts('https://www.gstatic.com/firebasejs/9.0.0/firebase-messaging-compa
 // Initialize Firebase in the Service Worker
 // Use the same config as your frontend firebase.ts
 
-firebase.initializeApp({
-  apiKey: process.env.VITE_FIREBASE_API_KEY,
-  projectId: process.env.VITE_FIREBASE_PROJECT_ID,
-  messagingSenderId: process.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.VITE_FIREBASE_APP_ID
+firebase.initializeApp({//this can load .env variables only read static/plain text
+  apiKey: YOUR_FIREBASE_API_KEY,
+  projectId: YOUR_FIREBASE_PROJECT_ID,
+  messagingSenderId: YOUR_MESSAGING_SENDER_ID,
+  appId: YOUR_FIREBASE_APP_ID
 });
 
 const messaging = firebase.messaging();
