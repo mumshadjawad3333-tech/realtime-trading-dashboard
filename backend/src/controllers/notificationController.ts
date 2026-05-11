@@ -10,7 +10,7 @@ export const subscribeToTopic = async (req: Request, res: Response) => {
   const { token, topic } = req.body;
 
   if (!token || !topic) {
-    return res.status(400).json({ 
+    return res.status(400).json({
       success: false, 
       message: 'FCM Token and Topic name are required.' 
     });

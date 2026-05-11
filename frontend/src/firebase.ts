@@ -2,9 +2,6 @@ import { initializeApp } from "firebase/app";
 import { getMessaging } from "firebase/messaging";
 
 
-// DEBUG: See if variables are actually loading
-console.log("Vite Project ID:", import.meta.env.VITE_FIREBASE_PROJECT_ID);
-console.log("Vite Project ID:", import.meta.env.VITE_FIREBASE_API_KEY);
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,

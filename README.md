@@ -55,8 +55,9 @@ cd backend
 npm test
 
 
-
---
+---
+**NOTE : Please refer simulator.ts for fcm notification price alter triggers**
+---
 Architecture & Scalability
 Clean Architecture: The project follows a modular structure with separated concerns for network calls (API Client), helpers (FCM logic), and core services.
 
